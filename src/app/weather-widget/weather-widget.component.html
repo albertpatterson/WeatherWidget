@@ -1,0 +1,17 @@
+<div class="container cloudy" [ngSwitch]="view">
+  <div *ngSwitchCase="'weather'">
+    <button id="location" class="mainData" (click)="updateLocation()">{{location}}</button>
+    <p class="mainData">{{date}}</p>
+    <p class="mainData">{{weatherCondition}}</p>
+    <div id="weatherIcon"></div>
+    <p class="secondaryData centered">Temp: {{temperature}}</p>
+    <p class="secondaryData centered">Precipitation: {{precipitation}}</p>
+    <p class="secondaryData centered">Wind: {{wind}}</p>
+  </div>
+  <div *ngSwitchCase="'location'">
+      <input type="text" id="locationTextfield" (keyup)="locationTextChanged($event)" placeholder="New Location">      
+  </div>
+  <div *ngSwitchDefault>
+    <p>{{view}}</p>
+  </div>
+</div>
