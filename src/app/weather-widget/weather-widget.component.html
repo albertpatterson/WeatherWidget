@@ -1,6 +1,6 @@
-<div class="container cloudy" [ngSwitch]="view">
-  <div *ngSwitchCase="'weather'">
-    <button id="location" class="mainData" (click)="updateLocation()">{{location}}</button>
+<div [ngSwitch]="view" class="widgetContainer">
+  <div *ngSwitchCase="'weather'" class="weatherContainer sunny">
+    <button id="location" (click)="updateLocation()">{{location}}</button>
     <p class="mainData">{{date}}</p>
     <p class="mainData">{{weatherCondition}}</p>
     <div id="weatherIcon"></div>
