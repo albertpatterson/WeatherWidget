@@ -1,0 +1,4 @@
+<div class="container" [ngSwitch]="view">
+    <weather-widget *ngSwitchCase="'weather'" location={{location}} coords={{coords}} (updateLocation)="showLocationSelector()"></weather-widget> 
+    <location-selector *ngSwitchCase="'location'" (selectLocation)="doUpdateLocation($event)"></location-selector>     
+</div>

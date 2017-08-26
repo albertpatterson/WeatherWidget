@@ -1,17 +1,9 @@
-<div [ngSwitch]="view" class="widgetContainer">
-  <div *ngSwitchCase="'weather'" class="weatherContainer sunny">
-    <button id="location" (click)="updateLocation()">{{location}}</button>
-    <p class="mainData">{{date}}</p>
-    <p class="mainData">{{weatherCondition}}</p>
-    <div id="weatherIcon"></div>
-    <p class="secondaryData centered">Temp: {{temperature}}</p>
-    <p class="secondaryData centered">Precipitation: {{precipitation}}</p>
-    <p class="secondaryData centered">Wind: {{wind}}</p>
-  </div>
-  <div *ngSwitchCase="'location'">
-      <input type="text" id="locationTextfield" (keyup)="locationTextChanged($event)" placeholder="New Location">      
-  </div>
-  <div *ngSwitchDefault>
-    <p>{{view}}</p>
-  </div>
+<div class="weatherContainer" [ngClass]="weatherCondition">
+  <button id="location" (click)="doUpdateLocation()">{{location}}</button>
+  <p class="mainData">{{date}}</p>
+  <p class="mainData">{{weatherCondition}}</p>
+  <div id="weatherIcon"></div>
+  <p class="secondaryData centered">Temperature: {{temperature}}</p>
+  <p class="secondaryData centered">Precipitation: {{precipitation}}</p>
+  <p class="secondaryData centered">Wind: {{wind}}</p>
 </div>

@@ -1,25 +1,29 @@
-.widgetContainer {
+.weatherContainer {
     width: 200px;
     height: 300px;
     border: 1px solid black;
+    display: inline-block;
+    overflow-y: auto;
 }
-.weatherContainer {
-    width: 100%;
-    height: 100%;
-}
-.sunny {
+
+.sunny, 
+.sunny button {
     background-color: #ffc90e;
 }
-.rainy {
+.rainy, 
+.rainy button {
     background-color: #d3d3d3;
 }
-.stormy {
+.stormy, 
+.stormy button{
     background-color: #99d9ea;
 }
-.snowy {
+.snowy, 
+.snowy button {
     background-color: white;
 }
-.cloudy {
+.cloudy, 
+.cloudy button {
     background-color: #559dcc
 }
 
@@ -45,19 +49,28 @@
     margin: 10px;
 }
 
-.sunny p,button{
+#location {
+    border: none;
+}
+
+.sunny p,
+.sunny button{
     color: white;
 }
-.rainy p,button{
+.rainy p,
+.rainy button{
     color: blue;
 }
-.stormy p,button{
+.stormy p,
+.stormy button{
     color: yellow;
 }
-.snowy p,button{
+.snowy p,
+.snowy button{
     color: #2196f3
 }
-.cloudy p,button{
+.cloudy p,
+.cloudy button{
     color: white
 }
 

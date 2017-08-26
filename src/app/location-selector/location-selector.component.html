@@ -1,0 +1,9 @@
+<div class="container">
+  <p>Choose Location</p>
+  <input type="text" id="locationTextfield" (keyup)="locationTextChanged($event)" placeholder="New Location">      
+  <ul class="results">
+    <li class="result" *ngFor="let name of names; index as i">
+      <button (click)="doSelectLocation($event)" value={{i}}>{{name}}</button>
+    </li>
+  </ul>
+</div>
