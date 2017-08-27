@@ -45,4 +45,3 @@ A simple widget that fetches and displays weather data for a given location.
 ![rainy weather](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/rainy.png)
 ![stormy location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/stormy.png)
 ![sunny location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/sunny.png)
-![cloudy location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/cloudy.png)
