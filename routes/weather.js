@@ -17,7 +17,7 @@ router.get('/',
             let data = response.current_observation;
                        
             let weatherDate = {
-                date: data.local_time_rfc822.match(/.*(\d{1,2} \w{3,4} \d{4}).*/)[1],
+                date: data.local_time_rfc822.match(/.* (\d{1,2} \w{3,4} \d{4}).*/)[1],
                 weatherCondition: data.weather,
                 temperature: data.temp_f+" F",
                 precipitation: data.precip_today_in+ " in",
