@@ -38,3 +38,11 @@ A simple widget that fetches and displays weather data for a given location.
 4) build using >npm build
 5) servce using >npm start
 6) Open the browser to http://localhost:3000/
+
+## Expected Displays
+![unknown location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/unknown.png)
+![set location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/location.png)
+![rainy weather](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/rainy.png)
+![stormy location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/stormy.png)
+![sunny location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/sunny.png)
+![cloudy location](https://github.com/albertpatterson/screenshots/blob/master/weatherWidget/cloudy.png)
