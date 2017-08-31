@@ -48,6 +48,7 @@ export class WeatherWidgetComponent implements OnChanges {
         this.status="loaded";
       })
     }else{
+      this.status="loaded";
       this.date = "?";
       this.weatherCondition = "?";
       this.temperature = "?";
