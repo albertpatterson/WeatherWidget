@@ -10,7 +10,7 @@ export class VariableLocationWeatherWidgetComponent implements OnInit {
   private coords: string = "";
   private location: string = "Update Location";
 
-  private view: string = "weather";
+  private view: string = "location";
 
   constructor() { }
 
@@ -24,7 +24,6 @@ export class VariableLocationWeatherWidgetComponent implements OnInit {
   doUpdateLocation(newLocation: any){
     this.location = newLocation.name;
     this.coords = newLocation.coords;
-    this.view = "weather";
+    this.view = "weather"; 
   }
-
 }

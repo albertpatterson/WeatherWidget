@@ -8,12 +8,14 @@ import { LocationSelectorComponent } from './location-selector/location-selector
 
 import { WeatherService } from "./services/weather.service";
 import { LocationService } from "./services/location.service";
+import { WeatherSpinnerComponent } from './weather-spinner/weather-spinner.component';
 
 @NgModule({
   declarations: [
     WeatherWidgetComponent,
     VariableLocationWeatherWidgetComponent,
-    LocationSelectorComponent
+    LocationSelectorComponent,
+    WeatherSpinnerComponent
   ],
   imports: [
     BrowserModule,

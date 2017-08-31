@@ -1,9 +1,12 @@
-<div class="weatherContainer" [ngClass]="weatherCondition">
-  <button id="location" (click)="doUpdateLocation()">{{location}}</button>
-  <p class="mainData">{{date}}</p>
-  <p class="mainData">{{weatherCondition}}</p>
-  <div id="weatherIcon"></div>
-  <p class="secondaryData centered">Temperature: {{temperature}}</p>
-  <p class="secondaryData centered">Precipitation: {{precipitation}}</p>
-  <p class="secondaryData centered">Wind: {{wind}}</p>
+<div [ngSwitch]="status">
+  <div *ngSwitchCase="'loaded'" class="weatherContainer" [ngClass]="weatherCondition">
+    <button id="location" (click)="doUpdateLocation()">{{location}}</button>
+    <p class="mainData">{{date}}</p>
+    <p class="mainData">{{weatherCondition}}</p>
+    <div id="weatherIcon"></div>
+    <p class="secondaryData centered">Temperature: {{temperature}}</p>
+    <p class="secondaryData centered">Precipitation: {{precipitation}}</p>
+    <p class="secondaryData centered">Wind: {{wind}}</p>
+  </div>
+  <weather-spinner *ngSwitchCase="'loading'"></weather-spinner>
 </div>

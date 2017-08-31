@@ -10,11 +10,13 @@ import {WeatherService} from "../services/weather.service";
 })
 export class WeatherWidgetComponent implements OnChanges {
 
+  private status: string;
+
   public location: string;
   public coords: string;
 
   public updateLocation:EventEmitter<any> = new EventEmitter();
-
+  
   private date: string;
 
   private weatherCondition: string;
@@ -33,6 +35,7 @@ export class WeatherWidgetComponent implements OnChanges {
 
   ngOnChanges(){
     if(this.coords){
+      this.status = "loading";
       this.weatherService.getWeatherData(this.coords)
       .then(weatherData=>{
         this.date = weatherData.date;
@@ -40,6 +43,9 @@ export class WeatherWidgetComponent implements OnChanges {
         this.temperature = weatherData.temperature;
         this.precipitation = weatherData.precipitation;
         this.wind = weatherData.wind;
+      })
+      .then(()=>{
+        this.status="loaded";
       })
     }else{
       this.date = "?";
