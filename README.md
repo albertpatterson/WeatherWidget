@@ -35,7 +35,7 @@ A simple widget that fetches and displays weather data for a given location.
 1) clone this repository
 2) [Sign up for a Weather Underground key](https://www.wunderground.com/weather/api/d/docs?d=index)
 3) Update routes/weather.js to use your secretKey (In this repo I require my own key from a file that I have not uploaded)
-4) build using >npm build
+4) build using >bg build
 5) servce using >npm start
 6) Open the browser to http://localhost:3000/
 
