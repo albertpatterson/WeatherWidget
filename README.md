@@ -2,7 +2,7 @@
 A simple widget that fetches and displays weather data for a given location. 
 
 ## TODO
-- [ ] Angular Front End
+- [x] Angular Front End
   - [x] location selection component
     - [x] search field that automatically updates matches
     - [x] button list to select location
@@ -20,7 +20,7 @@ A simple widget that fetches and displays weather data for a given location.
     - [x] http request to fetch location data
   - [x] weather service
     - [x] http request to fetch weather data
-  - [ ] animation to be shown when data is updating
+  - [x] animation to be shown when data is updating
 - [x] Express Back End
   - [x] location
     - [x] call to [Weather Underground AutoComplete API](https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api) to fetch location data
